@@ -401,14 +401,14 @@ Jobs arrive at rate $\lambda$. For a stable queue, $\mu>\lambda$. Moreover,  job
 
 
 \begin{exercise}{\faFlask}
-Why is $\mu e^{-\mu t}$ not a reasonable density for the
+Why is $\mu e^{-\mu t}$ not a reasonable for the
     inter-departure times?
     \begin{solution}
          Because jobs do not leave at rate $\mu$. 
     \end{solution}
 \end{exercise}
 
-The simplest guess for the inter-departure density might be $\lambda e^{-\lambda t}$; so this is what we will try to prove. As we will see, this result holds. 
+The simplest guess for the inter-departure might be $\lambda e^{-\lambda t}$; so this is what we will try to prove. As we will see, this result holds. 
 
 We will focus on departure moments and use~\eqref{eq:39}, in particular that departures `see' what arrivals `see', i.e., $\delta(n)= \pi(n)$, and PASTA.
 
@@ -471,7 +471,7 @@ Conditioning is much faster, but requires the concept of conditional density. Yo
 &=\int_0^t f_S(t-x) f_X(x) \d{x} \\
      &= \int_0^t \mu e^{-\mu(t-x)} \lambda e^{-\lambda x} \d{x} \\
      &= \lambda \mu e^{-\mu t} \int_0^t  e^{x(\mu-\lambda)} \d{x} \\
-& \frac{\lambda \mu}{\lambda - \mu} (e^{-\mu t} - e^{-\lambda t}).
+&= \frac{\lambda \mu}{\lambda - \mu} (e^{-\mu t} - e^{-\lambda t}).
     \end{align*}
     \end{solution}
 \end{exercise}
