@@ -540,18 +540,18 @@ where $H$ and $A$ are the limiting r.v.s. associated with $\{H_k\}$ and $\{A_k\}
 
 The next equation is more subtle. Take some $\delta>0$. It is simple to see that
 \begin{equation*}
-\delta \sum_{m=0}^\infty m \1{H_k \in [m\delta, (m+1)\delta)}
-\leq H_k \leq \delta \sum_{m=0}^\infty (m+1) \1{H_k \in [m\delta, (m+1)\delta)}.
+\delta \sum_{m=0}^\infty m \1{H_k \in [m\delta, (m+1)\delta}
+\leq H_k \leq \delta \sum_{m=0}^\infty (m+1) \1{H_k \in [m\delta, (m+1)\delta}.
 \end{equation*}
 Moreover, if $\delta\to 0$, the left and right hand side converge. Let us use the left hand side as an approximation for $H_k$. 
 
 \begin{align*}
 \frac{ \sum_{k=1}^n H_k \1{A_k\leq 15}}{\sum_{k=1}^n \1{A_k \leq 15}} 
 &\approx
-\delta \frac{ \sum_{k=1}^n  \sum_{m=0}^\infty m \1{A_k\leq 15, H_k \in [m\delta, (m+1)\delta)}}{\sum_{k=1}^n \1{A_k \leq 15}}  \\
-&= \delta \sum_{m=0}^\infty m \frac{ \sum_{k=1}^n   \1{A_k\leq 15, H_k \in [m\delta, (m+1)\delta)}}{\sum_{k=1}^n \1{A_k \leq 15}}  \\
-&\stackrel{n\to\infty}{\longrightarrow} \delta \sum_{m=0}^\infty m \frac{ \P{{A\leq 15, H \in [m\delta, (m+1)\delta)}}}{\P{A \leq 15}}  \\
-&=\delta \sum_{m=0}^\infty m \P{H \in [m\delta, (m+1)\delta)\given A \leq 15} \\
+\delta \frac{ \sum_{k=1}^n  \sum_{m=0}^\infty m \1{A_k\leq 15, H_k \in [m\delta, (m+1)\delta}}{\sum_{k=1}^n \1{A_k \leq 15}}  \\
+&= \delta \sum_{m=0}^\infty m \frac{ \sum_{k=1}^n   \1{A_k\leq 15, H_k \in [m\delta, (m+1)\delta}}{\sum_{k=1}^n \1{A_k \leq 15}}  \\
+&\stackrel{n\to\infty}{\longrightarrow} \delta \sum_{m=0}^\infty m \frac{ \P{{A\leq 15, H \in [m\delta, (m+1)\delta}}}{\P{A \leq 15}}  \\
+&=\delta \sum_{m=0}^\infty m \P{H \in [m\delta, (m+1)\delta\given A \leq 15} \\
 &\stackrel{\delta\to0}{\longrightarrow}  \E{H\given A \leq 15}.
 \end{align*}
 Finally, if $H$ and $A$ would be independent (which they are not), then it is easy  in the above to take out the condition on $A\leq 15$ and conclude that $\E{H\given A\leq 15} = \E{H}$. 
